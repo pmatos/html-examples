@@ -19,11 +19,11 @@ I wanted this for my blog so I found a really simple way to obtain the HTML gene
 @defmodule[html-examples]
 
 @defproc[(examples->html [x (or/c compound-paragraph? nested-flow?)]
-                         [#:set-class new-class symbol? 'main])
+                         [#:set-class new-class symbol? 'racket-example])
          txexpr?]{
 Produces a @racket[txexpr?] from examples block in @var[x].
 
-The resulting @racket[txexpr?] will have css property class @var[new-class], which defaults to @racket['main].
+The resulting @racket[txexpr?] will have css property class @var[new-class], which defaults to @racket['racket-example].
 
 @bold{Note:} This function will only provide you with the HTML for examples, you still need to add the CSS files to your webpage for it to look good. The required CSS files can be found in the @hyperlink["https://github.com/pmatos/html-examples/tree/master/assets"]{assets folder} of the @tt{html-examples} repository.
 }

@@ -1,6 +1,7 @@
 #lang info
 (define collection "html-examples")
-(define deps '("txexpr" "base"))
+(define deps '("scribble-lib"
+               "txexpr" "base"))
 (define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/html-examples.scrbl" ())))
 (define pkg-desc "Generates xHTML parts from scribble/example")
